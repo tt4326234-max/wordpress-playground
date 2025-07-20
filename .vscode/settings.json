@@ -1,4 +1,6 @@
-{
+{],],
+	"git.ignoreLimitWarning" : đúng ,
+	"git.ignoreLimitWarning" : đúng ,
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"eslint.validate": [
 		"json"
