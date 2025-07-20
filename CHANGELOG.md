@@ -4,6 +4,547 @@ All notable changes to this project are documented in this file by a CI job
 that runs on every NPM release. The file follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 format.
 
+## [v0.9.28] (2024-08-05)
+
+### Blueprints
+
+-   Add support for loading wpCli without running blueprint steps. ([#1629](https://github.com/WordPress/wordpress-playground/pull/1629))
+
+### Documentation
+
+-   Blueprints: Add resetData step to documentation. ([#1658](https://github.com/WordPress/wordpress-playground/pull/1658))
+-   Docs: Redirect from /docs to https://wordpress.github.io/wordpress-playground. ([#1671](https://github.com/WordPress/wordpress-playground/pull/1671))
+
+### Website
+
+-   Suppress unavoidable Deprecated notices - Networking. ([#1660](https://github.com/WordPress/wordpress-playground/pull/1660))
+-   UI: Explain the Logs modal. ([#1666](https://github.com/WordPress/wordpress-playground/pull/1666))
+
+#### Blueprints
+
+-   Precompile Ajv Blueprint validator to avoid CSP issues. ([#1649](https://github.com/WordPress/wordpress-playground/pull/1649))
+
+### Internal
+
+-   Reinstantiate Changelog generation in GitHub CI. ([#1657](https://github.com/WordPress/wordpress-playground/pull/1657))
+
+### Various
+
+-   Rollback artifact creation to enable downloading a pre-built package …. ([#1624](https://github.com/WordPress/wordpress-playground/pull/1624))
+-   Update WordPress packages. ([#1672](https://github.com/WordPress/wordpress-playground/pull/1672))
+-   Update `ws` package version to fix DOS vulnerability. ([#1635](https://github.com/WordPress/wordpress-playground/pull/1635))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel @bgrgicak @brandonpayton @PiotrPress
+
+## [v0.9.27] (2024-07-29)
+
+### Enhancements
+
+-   Support offline mode after the first Playground page load. ([#1643](https://github.com/WordPress/wordpress-playground/pull/1643))
+
+### Devrel
+
+-   Remove puzzle app package. ([#1642](https://github.com/WordPress/wordpress-playground/pull/1642))
+
+### PHP WebAssembly
+
+-   Cache Playground assets to enable offline support. ([#1535](https://github.com/WordPress/wordpress-playground/pull/1535))
+-   Rotate PHP runtime after runtime crash. ([#1628](https://github.com/WordPress/wordpress-playground/pull/1628))
+-   Throw error when PHP run() receives no code to run. ([#1646](https://github.com/WordPress/wordpress-playground/pull/1646))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel @bgrgicak @brandonpayton
+
+## [v0.9.26] (2024-07-22)
+
+### Blueprints
+
+-   Add missing blueprints library dep. ([#1640](https://github.com/WordPress/wordpress-playground/pull/1640))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@brandonpayton
+
+## [v0.9.25] (2024-07-22)
+
+### Tools
+
+-   Make sure NPM packages declare dependencies. ([#1639](https://github.com/WordPress/wordpress-playground/pull/1639))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@brandonpayton
+
+## [v0.9.24] (2024-07-22)
+
+### Bug Fixes
+
+-   Fix plugin-proxy response codes. ([#1636](https://github.com/WordPress/wordpress-playground/pull/1636))
+-   Stop publishing @wp-playground/wordpress-builds package. ([#1637](https://github.com/WordPress/wordpress-playground/pull/1637))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@bgrgicak @brandonpayton
+
+## [v0.9.23] (2024-07-22)
+
+### PHP WebAssembly
+
+-   Route requests more like a normal web server. ([#1539](https://github.com/WordPress/wordpress-playground/pull/1539))
+
+### Website
+
+-   Remove old, unused website deployment workflow. ([#1633](https://github.com/WordPress/wordpress-playground/pull/1633))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@brandonpayton
+
+## [v0.9.22] (2024-07-19)
+
+### Bug Fixes
+
+-   Remove WP 6.2 support after WP 6.6 release. ([#1632](https://github.com/WordPress/wordpress-playground/pull/1632))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@brandonpayton
+
+## [v0.9.21] (2024-07-19)
+
+### Website
+
+-   Fix manifest.json URLs. ([#1615](https://github.com/WordPress/wordpress-playground/pull/1615))
+
+### Internal
+
+-   Fix joinPaths root edge case. ([#1620](https://github.com/WordPress/wordpress-playground/pull/1620))
+
+### Various
+
+-   Disable PHP 7.0 and 7.1 version switcher end-to-end tests. ([#1626](https://github.com/WordPress/wordpress-playground/pull/1626))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@bgrgicak @brandonpayton
+
+## [v0.9.20] (2024-07-16)
+
+### Enhancements
+
+#### Boot Flow
+
+-   Backfill the assets removed from minified WordPress bundles. ([#1604](https://github.com/WordPress/wordpress-playground/pull/1604))
+-   Register service worker before spawning the worker thread. ([#1606](https://github.com/WordPress/wordpress-playground/pull/1606))
+
+### Website
+
+-   Disable website features that don't work while offline. ([#1607](https://github.com/WordPress/wordpress-playground/pull/1607))
+-   Generate a list of assets to cache for offline support. ([#1573](https://github.com/WordPress/wordpress-playground/pull/1573))
+
+### Internal
+
+-   Build: Ship the default TypeScript .d.ts declaration files, not rollups. ([#1593](https://github.com/WordPress/wordpress-playground/pull/1593))
+
+### Bug Fixes
+
+#### Boot Flow
+
+-   Fix recursive calls to backfillStaticFilesRemovedFromMinifiedBuild. ([#1614](https://github.com/WordPress/wordpress-playground/pull/1614))
+
+### Various
+
+-   Add/allow import site gutenberg pr. ([#1610](https://github.com/WordPress/wordpress-playground/pull/1610))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel @bgrgicak @smithjw1
+
+## [v0.9.19] (2024-07-15)
+
+### **Breaking Changes**
+
+-   Set web worker startup options with messages instead of query strings. ([#1574](https://github.com/WordPress/wordpress-playground/pull/1574))
+
+### Blueprints
+
+-   Add an Import Theme Starter Content step. ([#1521](https://github.com/WordPress/wordpress-playground/pull/1521))
+-   Add setSiteLanguage step to change the language. ([#1538](https://github.com/WordPress/wordpress-playground/pull/1538))
+-   Mark shorthand properties as stable, not deprecated. ([#1594](https://github.com/WordPress/wordpress-playground/pull/1594))
+
+### Documentation
+
+-   Add Blueprint 101 to Documentation. ([#1556](https://github.com/WordPress/wordpress-playground/pull/1556))
+
+### PHP WebAssembly
+
+#### Website
+
+-   Download all WordPress assets on boot. ([#1532](https://github.com/WordPress/wordpress-playground/pull/1532))
+
+### Website
+
+-   PHP CORS Proxy. ([#1546](https://github.com/WordPress/wordpress-playground/pull/1546))
+
+### Various
+
+-   Revert "Set web worker startup options with messages instead of query strings". ([#1605](https://github.com/WordPress/wordpress-playground/pull/1605))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel @bgrgicak @bph @dd32
+
+## [v0.9.18] (2024-07-09)
+
+### Website
+
+-   Remove the unused isSupportedWordPressVersion export. ([#1592](https://github.com/WordPress/wordpress-playground/pull/1592))
+
+### Internal
+
+-   Build: Polyfill \_\_dirname in php-wam/node ESM via banner option. ([#1591](https://github.com/WordPress/wordpress-playground/pull/1591))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel
+
+## [v0.9.16] (2024-07-09)
+
+### Internal
+
+-   Build: Source external deps from package.json. ([#1590](https://github.com/WordPress/wordpress-playground/pull/1590))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel
+
+## [v0.9.15] (2024-07-09)
+
+### Internal
+
+-   Build: Use regular expressions to mark packages as external. ([#1589](https://github.com/WordPress/wordpress-playground/pull/1589))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel
+
+## [v0.9.14] (2024-07-09)
+
+### Devrel
+
+-   Remove Puzzle app from the Playground website. ([#1588](https://github.com/WordPress/wordpress-playground/pull/1588))
+
+### Internal
+
+-   Vite build: Mark all imported modules as external to avoid bundling them with released packages. ([#1586](https://github.com/WordPress/wordpress-playground/pull/1586))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel @bgrgicak
+
+## [v0.9.13] (2024-07-08)
+
+### PHP WebAssembly
+
+-   php-wasm/node: Ship as ESM and CJS. ([#1585](https://github.com/WordPress/wordpress-playground/pull/1585))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel
+
+## [v0.9.12] (2024-07-08)
+
+## [v0.9.11] (2024-07-08)
+
+### PHP WebAssembly
+
+-   Build: Treat all dependencies of php-wasm/node as external. ([#1584](https://github.com/WordPress/wordpress-playground/pull/1584))
+
+### Various
+
+-   Autopublish npm packages every week. ([#1542](https://github.com/WordPress/wordpress-playground/pull/1542))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel
+
+## [v0.9.10] (2024-07-08)
+
+### Internal
+
+-   Revert "Use NPM for publishing packages instead of Lerna ". ([#1582](https://github.com/WordPress/wordpress-playground/pull/1582))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel
+
+## [v0.9.9] (2024-07-08)
+
+### Internal
+
+-   Use NPM for publishing packages instead of Lerna. ([#1581](https://github.com/WordPress/wordpress-playground/pull/1581))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel
+
+## [v0.9.4] (2024-07-03)
+
+### Documentation
+
+-   Update the Blueprint data format doc. ([#1510](https://github.com/WordPress/wordpress-playground/pull/1510))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@ndiego
+
+## [v0.9.3] (2024-07-03)
+
+### Tools
+
+#### Blueprints
+
+-   Importing regression fix – support old exported Playground ZIPs. ([#1569](https://github.com/WordPress/wordpress-playground/pull/1569))
+
+### Documentation
+
+-   Add GitHub development instructions. ([#1551](https://github.com/WordPress/wordpress-playground/pull/1551))
+
+### Internal
+
+-   Meta: GitHub Boards Automation. ([#1549](https://github.com/WordPress/wordpress-playground/pull/1549))
+-   Meta: GitHub-sourced Mindmap. ([#1559](https://github.com/WordPress/wordpress-playground/pull/1559))
+
+###
+
+-   Add cache version number. ([#1541](https://github.com/WordPress/wordpress-playground/pull/1541))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel @bgrgicak
+
+## [v0.9.1] (2024-06-26)
+
+### PHP WebAssembly
+
+-   Networking access: Fix wp_http_supports() to work without the kitchen-sink extension bundle. ([#1504](https://github.com/WordPress/wordpress-playground/pull/1504))
+-   Networking: Remove CORS workarounds for WordPress.org API. ([#1511](https://github.com/WordPress/wordpress-playground/pull/1511))
+-   Backfill remote asset listing when needed. ([#1531](https://github.com/WordPress/wordpress-playground/pull/1531))
+
+### Website
+
+-   Remove "small window mode". ([#1540](https://github.com/WordPress/wordpress-playground/pull/1540))
+-   Detect actual, loaded WP version. ([#1503](https://github.com/WordPress/wordpress-playground/pull/1503))
+
+### Various
+
+-   Remove deprecation note from shorthand steps. ([#1507](https://github.com/WordPress/wordpress-playground/pull/1507))
+-   Remove trailing semicolon from example URL for loading playground with network access. ([#1520](https://github.com/WordPress/wordpress-playground/pull/1520))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel @bph @brandonpayton @dd32 @oskosk
+
+## [v0.7.20] (2024-05-21)
+
+### **Breaking Changes**
+
+-   [Breaking] Refactor PHP.ini management, remove php.setPhpIniPath() and php.setPhpIniEntry(). ([#1423](https://github.com/WordPress/wordpress-playground/pull/1423))
+
+### Enhancements
+
+-   CLI: Distinguish between mount and mountBeforeInstall options. ([#1410](https://github.com/WordPress/wordpress-playground/pull/1410))
+-   CLI: Support fetching WordPress zips from custom URLs. ([#1415](https://github.com/WordPress/wordpress-playground/pull/1415))
+-   Introduce a new @wp-playground/common package to avoid circular depencies. ([#1387](https://github.com/WordPress/wordpress-playground/pull/1387))
+-   Website: Ship the SQLite database integration plugin. ([#1418](https://github.com/WordPress/wordpress-playground/pull/1418))
+
+#### Boot Flow
+
+-   Playground CLI: Don't create /wordpress/wp-config.php on boot. ([#1407](https://github.com/WordPress/wordpress-playground/pull/1407))
+
+### Blueprints
+
+-   Define constants in auto_prepend_file, silence warnings related to redefining those constants. ([#1400](https://github.com/WordPress/wordpress-playground/pull/1400))
+-   Detect silent failures when activating plugins and theme. ([#1436](https://github.com/WordPress/wordpress-playground/pull/1436))
+-   Re-activate single-file plugins when enabling a multisite. ([#1435](https://github.com/WordPress/wordpress-playground/pull/1435))
+-   Throw an error when activating a theme or plugin that doesn't exist. ([#1391](https://github.com/WordPress/wordpress-playground/pull/1391))
+-   Write sunrise.php to /internal in enableMultisite step. ([#1401](https://github.com/WordPress/wordpress-playground/pull/1401))
+
+### Tools
+
+-   Add VSCode branch protection. ([#1408](https://github.com/WordPress/wordpress-playground/pull/1408))
+-   Show error log if Playground fails to start. ([#1336](https://github.com/WordPress/wordpress-playground/pull/1336))
+
+#### Blueprints
+
+-   Unzip: Only delete a temporary zip file after unzipping, do not delete the original zip. ([#1412](https://github.com/WordPress/wordpress-playground/pull/1412))
+
+#### GitHub integration
+
+-   GitHub export: Create new commits in your fork when writing to the upstream repo isn't allowed. ([#1392](https://github.com/WordPress/wordpress-playground/pull/1392))
+
+#### Import/Export
+
+-   Support wp_crop_image in import wxr. ([#1357](https://github.com/WordPress/wordpress-playground/pull/1357))
+
+### Devrel
+
+-   Add puzzle API. ([#1372](https://github.com/WordPress/wordpress-playground/pull/1372))
+
+### Documentation
+
+-   Docs: Use step function names instead of TypeScript type names. ([#1373](https://github.com/WordPress/wordpress-playground/pull/1373))
+-   Updated the GitHub issue link to open in a new tab. ([#1353](https://github.com/WordPress/wordpress-playground/pull/1353))
+-   Use step id name. ([#1377](https://github.com/WordPress/wordpress-playground/pull/1377))
+
+### Experiments
+
+-   Explore: Setup SQLite database integration without creating wp-content/db.php. ([#1382](https://github.com/WordPress/wordpress-playground/pull/1382))
+
+### PHP WebAssembly
+
+-   Add shareable extension-to-MIME-type mapping. ([#1355](https://github.com/WordPress/wordpress-playground/pull/1355))
+-   Document php ini functions. ([#1430](https://github.com/WordPress/wordpress-playground/pull/1430))
+-   JSPI: Enable the origin trial on Chrome. ([#1346](https://github.com/WordPress/wordpress-playground/pull/1346))
+-   PHP: Add libjpeg and libwebp support. ([#1393](https://github.com/WordPress/wordpress-playground/pull/1393))
+-   PHP: Always set the auto_prepend_file php.ini entry, even when the auto_prepend_file.php file exists. ([#1388](https://github.com/WordPress/wordpress-playground/pull/1388))
+-   PHP: Move internal shared directories to /internal/shared. ([#1386](https://github.com/WordPress/wordpress-playground/pull/1386))
+-   PHP: Remove mentions of a custom PHP extension. ([#1422](https://github.com/WordPress/wordpress-playground/pull/1422))
+-   PHP: Remove the MODE_EVAL_CODE execution mode. ([#1433](https://github.com/WordPress/wordpress-playground/pull/1433))
+-   PHP: Support php.mv() between devices via recursive copy. ([#1411](https://github.com/WordPress/wordpress-playground/pull/1411))
+-   PHP: Use /internal/shared/php.ini by default. ([#1419](https://github.com/WordPress/wordpress-playground/pull/1419))
+-   PHP: Use auto_prepend_file to preload mu-plugins (instead of creating them in wp-content/mu-plugins). ([#1366](https://github.com/WordPress/wordpress-playground/pull/1366))
+
+### Website
+
+-   Improve log modal styles, a11y, error message wording. ([#1369](https://github.com/WordPress/wordpress-playground/pull/1369))
+-   Move puzzle app to a Playground package. ([#1385](https://github.com/WordPress/wordpress-playground/pull/1385))
+-   Add secrets on-demand for more endpoints. ([#1362](https://github.com/WordPress/wordpress-playground/pull/1362))
+-   Boot: Move WordPress zip extraction logic to a common unzipWordPress() utility. ([#1427](https://github.com/WordPress/wordpress-playground/pull/1427))
+-   Derive MIME types for PHP served files from shared JSON. ([#1360](https://github.com/WordPress/wordpress-playground/pull/1360))
+-   Fix constant names for GH export oauth. ([#1378](https://github.com/WordPress/wordpress-playground/pull/1378))
+-   Playground Boot: Align the boot process between remote.html and CLI. ([#1389](https://github.com/WordPress/wordpress-playground/pull/1389))
+-   Remote.html: Install WordPress if it isn't installed yet. ([#1425](https://github.com/WordPress/wordpress-playground/pull/1425))
+-   Remote.html: Preload the SQLite database plugin, but only execute it if there's no custom db.php inside wp-content. ([#1424](https://github.com/WordPress/wordpress-playground/pull/1424))
+-   Simplify website deployment workflows. ([#1404](https://github.com/WordPress/wordpress-playground/pull/1404))
+-   Update rsync command to clean up more completely. ([#1361](https://github.com/WordPress/wordpress-playground/pull/1361))
+
+#### Blueprints
+
+-   Provide non-gzipped wp-cli.phar file with website build. ([#1406](https://github.com/WordPress/wordpress-playground/pull/1406))
+-   Simplify runPhpWithZipFunctions() setup. ([#1434](https://github.com/WordPress/wordpress-playground/pull/1434))
+
+### Internal
+
+-   Fix changelog automation. ([#1413](https://github.com/WordPress/wordpress-playground/pull/1413))
+
+### Bug Fixes
+
+-   Add name to Puzzle package. ([#1443](https://github.com/WordPress/wordpress-playground/pull/1443))
+-   Fixed images not loading on the page. ([#1352](https://github.com/WordPress/wordpress-playground/pull/1352))
+-   Restore nightly wordpress build. ([#1437](https://github.com/WordPress/wordpress-playground/pull/1437))
+
+### Reliability
+
+-   Disable console logging when running tests. ([#1368](https://github.com/WordPress/wordpress-playground/pull/1368))
+
+###
+
+-   Lint: Disable console warnings for paths where they're not useful. ([#1421](https://github.com/WordPress/wordpress-playground/pull/1421))
+
+### Various
+
+-   Add links to kitchen sink (PHP extensions), networking. ([#1363](https://github.com/WordPress/wordpress-playground/pull/1363))
+-   Reorganize and update documentation. ([#1354](https://github.com/WordPress/wordpress-playground/pull/1354))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel @bgrgicak @brandonpayton @flexseth @ironnysh @josevarghese
+
+## [v0.7.15] (2024-04-30)
+
+### Website
+
+-   Avoid edge-caching conditionally redirected resources. ([#1351](https://github.com/WordPress/wordpress-playground/pull/1351))
+-   Fix deploy-time check for file with PHP-handled redirect. ([#1350](https://github.com/WordPress/wordpress-playground/pull/1350))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@brandonpayton
+
+## [v0.7.10] (2024-04-30)
+
+### PHP WebAssembly
+
+-   PHP.wasm Node: Revert a part of #1289, do not import a .wasm file. ([#1348](https://github.com/WordPress/wordpress-playground/pull/1348))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel
+
+## [v0.7.5] (2024-04-30)
+
+### Internal
+
+-   Meta: Move the minified WordPress to the new `@wp-playground/wordpress-builds` package. ([#1343](https://github.com/WordPress/wordpress-playground/pull/1343))
+
+### Contributors
+
+The following contributors merged PRs in this release:
+
+@adamziel
+
 ## [v0.7.3] (2024-04-29)
 
 ### PHP WebAssembly
